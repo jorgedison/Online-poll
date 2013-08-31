@@ -33,7 +33,7 @@
                 }
             }
  
-            if($cont < 2){ // si el usuario no definio ninguna opcion, se elimina la encuesta recien creada, esto es poco probable que suceda ya que la definicion de opciones la haremos con un select, y aqui se seleccionara el valor de 2 por defecto.
+            if($cont < 3){ // si el usuario no definio ninguna opcion, se elimina la encuesta recien creada, esto es poco probable que suceda ya que la definicion de opciones la haremos con un select, y aqui se seleccionara el valor de 2 por defecto.
                 $sql = "DELETE FROM `encuestas` WHERE id = ".$id_encuesta;
                 echo "<div class='error'>Tiene que llevar por lo menos 2 opciones.</div>";
             }else{
